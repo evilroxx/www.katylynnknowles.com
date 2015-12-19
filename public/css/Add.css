@@ -1,0 +1,108 @@
+		section.journey{
+			background-color:#000000;
+		}
+		
+		section.portfolio{
+			background-color:#fff;
+		}
+		
+		section.educator{
+			background-color:#c8c8cf;
+		}
+		
+		section.contact{
+			background-color:#ffffff;
+		}
+		
+		section.about{
+			background-color:#ffccff;
+		}
+						
+		section.resume{
+			background-color:#c8c8cf;
+		}
+		
+		section.blog{
+			background-color:#cdcdcd;
+		}
+		
+		section.Testimonials{
+			background-color:#ffccff;
+		}
+		
+		blockquote {
+			border-left: 8px solid #580058;
+		}
+		
+		.blockquote-reverse {			
+			border-right:8px solid #580058;
+		}
+		
+		blockquote footer.blockquote-footer{			
+			color:#580058;
+		}
+		
+		blockquote p{
+			font-size:16px;
+			text-align: justify;
+		}
+		
+		h2.testimonial{
+			color:#580058
+		}
+		
+		
+		div.baseImg{		
+			background: url(../img/site/page-top/profile.png) no-repeat;			
+			position:absolute;
+			left: 127px;
+			top:  32px;
+			width: 251px;
+			height: 251px;					
+			background-size: cover;
+			border-radius:100%; 
+			margin: auto; 			
+			-webkit-border-radius: 100%; 
+			-moz-border-radius: 100%;
+		}
+
+		div.overlayImg{
+			margin-left:25px;
+			background: url(../img/site/page-top/purp1.png) no-repeat;
+			position:relative;			
+			width:401px; /*534px*/
+			height:446px; /*534px*/					
+			/*border: 1px solid #fff;*/
+			background-size: cover;
+		}
+				
+		p.journey{
+			font: bold 22px Helvetica, Sans-Serif;
+			color:#fff;
+			letter-spacing: -1px;  
+			text-align: center;
+		}
+
+		p.journey span.great-vibe{
+			font: bold 110px 'Great Vibes', Helvetica, Sans-Serif;
+			color:#D050D0;
+		}
+		
+		img.hovering{																		
+			-webkit-transition: opacity .3s ease-in-out;
+			-moz-transition: opacity .3s ease-in-out;
+			-o-transition: opacity .3s ease-in-out;
+			transition: opacity .3s ease-in-out;
+			
+			-moz-box-shadow: 0 0 15px #800080; 
+			-webkit-box-shadow: 0 0 15px #800080; 
+			box-shadow: 0 0 15px #800080;
+		}
+		
+		img.hovering.top:hover{
+			opacity:0;			
+		}
+		
+		.border-up div{
+			border: 2px solid red;
+		}
