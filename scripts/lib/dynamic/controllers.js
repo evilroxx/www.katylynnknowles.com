@@ -7,124 +7,124 @@ ktkApp.controller('ktkController', function($scope){
 			'projID':0,
 			'projName':'Behind Closed Doors: Exploring Contemporary Relationships',
 			'projDesc':'Director',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/5.jpg', 'title':'Title #5','desc':'Desc 5'},							
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/6.jpg', 'title':'Title #6','desc':'Desc 6'},
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/7.jpg', 'title':'Title #7','desc':'Desc 7'},
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/8.jpg', 'title':'Title #8','desc':'Desc 8'},
-							{'fileName': 'assets/Portfolio Projects/Behind Closed Doors/9.jpg', 'title':'Title #9','desc':'Desc 9'}					
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/5.jpg', 'title':'Title #5','desc':'Desc 5'},							
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/6.jpg', 'title':'Title #6','desc':'Desc 6'},
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/7.jpg', 'title':'Title #7','desc':'Desc 7'},
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/8.jpg', 'title':'Title #8','desc':'Desc 8'},
+							{'fileName': 'assets/portfolio_projects/behind_closed_doors/9.jpg', 'title':'Title #9','desc':'Desc 9'}					
 						 ]			
 		},		
 		{
 			'projID':1,
 			'projName':'The Wedding Singer',
 			'projDesc':'Choreographer',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'Assets/Portfolio Projects/Wedding Singer/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'Assets/Portfolio Projects/Wedding Singer/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'Assets/Portfolio Projects/Wedding Singer/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'Assets/Portfolio Projects/Wedding Singer/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'Assets/Portfolio Projects/Wedding Singer/5.jpg', 'title':'Title #5','desc':'Desc 5'},
-							{'fileName': 'Assets/Portfolio Projects/Wedding Singer/6.jpg', 'title':'Title #6','desc':'Desc 6'}							
+							{'fileName': 'assets/portfolio_projects/the_wedding_singer/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/the_wedding_singer/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/the_wedding_singer/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/the_wedding_singer/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/the_wedding_singer/5.jpg', 'title':'Title #5','desc':'Desc 5'},
+							{'fileName': 'assets/portfolio_projects/the_wedding_singer/6.jpg', 'title':'Title #6','desc':'Desc 6'}							
 						 ]			
 		},
 		{
 			'projID':2,
 			'projName':'Broadway Musical Revue',
 			'projDesc':'Director and Choreographer',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'Assets/Portfolio Projects/Broadway Musical Revue/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'Assets/Portfolio Projects/Broadway Musical Revue/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'Assets/Portfolio Projects/Broadway Musical Revue/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'Assets/Portfolio Projects/Broadway Musical Revue/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'Assets/Portfolio Projects/Broadway Musical Revue/5.jpg', 'title':'Title #5','desc':'Desc 5'},
-							{'fileName': 'Assets/Portfolio Projects/Broadway Musical Revue/6.jpg', 'title':'Title #6','desc':'Desc 6'}							
+							{'fileName': 'assets/portfolio_projects/broadway_musical_revue/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/broadway_musical_revue/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/broadway_musical_revue/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/broadway_musical_revue/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/broadway_musical_revue/5.jpg', 'title':'Title #5','desc':'Desc 5'},
+							{'fileName': 'assets/portfolio_projects/broadway_musical_revue/6.jpg', 'title':'Title #6','desc':'Desc 6'}							
 						 ]			
 		},
 		{
 			'projID':3,
 			'projName':'Drowsy Chaperone',
 			'projDesc':'Choreographer',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'Assets/Portfolio Projects/Drowsy Chaperone/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'Assets/Portfolio Projects/Drowsy Chaperone/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'Assets/Portfolio Projects/Drowsy Chaperone/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'Assets/Portfolio Projects/Drowsy Chaperone/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'Assets/Portfolio Projects/Drowsy Chaperone/5.jpg', 'title':'Title #5','desc':'Desc 5'},
-							{'fileName': 'Assets/Portfolio Projects/Drowsy Chaperone/6.jpg', 'title':'Title #6','desc':'Desc 6'}
+							{'fileName': 'assets/portfolio_projects/drowsy_chaperone/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/drowsy_chaperone/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/drowsy_chaperone/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/drowsy_chaperone/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/drowsy_chaperone/5.jpg', 'title':'Title #5','desc':'Desc 5'},
+							{'fileName': 'assets/portfolio_projects/drowsy_chaperone/6.jpg', 'title':'Title #6','desc':'Desc 6'}
 						 ]			
 		},
 		{
 			'projID':4,
 			'projName':'Seussical Jr.',
 			'projDesc':'Director and Choreographer',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/5.jpg', 'title':'Title #5','desc':'Desc 5'},
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/6.jpg', 'title':'Title #6','desc':'Desc 6'},							
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/7.jpg', 'title':'Title #7','desc':'Desc 7'},
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/8.jpg', 'title':'Title #8','desc':'Desc 8'},
-							{'fileName': 'Assets/Portfolio Projects/Seussical Jr/9.jpg', 'title':'Title #9','desc':'Desc 9'}
+							{'fileName': 'assets/portfolio_projects/seussical_jr/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/seussical_jr/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/seussical_jr/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/seussical_jr/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/seussical_jr/5.jpg', 'title':'Title #5','desc':'Desc 5'},
+							{'fileName': 'assets/portfolio_projects/seussical_jr/6.jpg', 'title':'Title #6','desc':'Desc 6'},							
+							{'fileName': 'assets/portfolio_projects/seussical_jr/7.jpg', 'title':'Title #7','desc':'Desc 7'},
+							{'fileName': 'assets/portfolio_projects/seussical_jr/8.jpg', 'title':'Title #8','desc':'Desc 8'},
+							{'fileName': 'assets/portfolio_projects/seussical_jr/9.jpg', 'title':'Title #9','desc':'Desc 9'}
 						 ]			
 		},		
 		{
 			'projID':5,
 			'projName':'Wonderful Town',
 			'projDesc':'Director and Choreographer',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/5.jpg', 'title':'Title #5','desc':'Desc 5'},
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/6.jpg', 'title':'Title #6','desc':'Desc 6'},							
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/7.jpg', 'title':'Title #7','desc':'Desc 7'},
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/8.jpg', 'title':'Title #8','desc':'Desc 8'},
-							{'fileName': 'Assets/Portfolio Projects/Wonderful Town/9.jpg', 'title':'Title #9','desc':'Desc 9'}					
+							{'fileName': 'assets/portfolio_projects/wonderful_town/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/wonderful_town/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/wonderful_town/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/wonderful_town/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/wonderful_town/5.jpg', 'title':'Title #5','desc':'Desc 5'},
+							{'fileName': 'assets/portfolio_projects/wonderful_town/6.jpg', 'title':'Title #6','desc':'Desc 6'},							
+							{'fileName': 'assets/portfolio_projects/wonderful_town/7.jpg', 'title':'Title #7','desc':'Desc 7'},
+							{'fileName': 'assets/portfolio_projects/wonderful_town/8.jpg', 'title':'Title #8','desc':'Desc 8'},
+							{'fileName': 'assets/portfolio_projects/wonderful_town/9.jpg', 'title':'Title #9','desc':'Desc 9'}					
 						 ]			
 		},
 		{
 			'projID':6,
 			'projName':'Anything Goes',
 			'projDesc':'Choreographer',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'Assets/Portfolio Projects/Anything Goes/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'Assets/Portfolio Projects/Anything Goes/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'Assets/Portfolio Projects/Anything Goes/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'Assets/Portfolio Projects/Anything Goes/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'Assets/Portfolio Projects/Anything Goes/5.jpg', 'title':'Title #5','desc':'Desc 5'},
-							{'fileName': 'Assets/Portfolio Projects/Anything Goes/6.jpg', 'title':'Title #6','desc':'Desc 6'}
+							{'fileName': 'assets/portfolio_projects/anything_goes/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/anything_goes/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/anything_goes/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/anything_goes/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/anything_goes/5.jpg', 'title':'Title #5','desc':'Desc 5'},
+							{'fileName': 'assets/portfolio_projects/anything_goes/6.jpg', 'title':'Title #6','desc':'Desc 6'}
 						 ]			
 		},
 		{
 			'projID':7,
 			'projName':'Acting Up Camp Junior Shows',
 			'projDesc':'Director and Choreographer',
-			'projFolderPath':'Assets/Portfolio Projects/',
+			'projFolderPath':'assets/portfolio_projects/',
 			'thumbNails':[
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/1.jpg', 'title':'Title #1','desc':'Desc 1'},
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/2.jpg', 'title':'Title #2','desc':'Desc 2'},
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/3.jpg', 'title':'Title #3','desc':'Desc 3'},
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/4.jpg', 'title':'Title #4','desc':'Desc 4'},
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/5.jpg', 'title':'Title #5','desc':'Desc 5'},
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/6.jpg', 'title':'Title #6','desc':'Desc 6'},							
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/7.jpg', 'title':'Title #7','desc':'Desc 7'},
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/8.jpg', 'title':'Title #8','desc':'Desc 8'},
-							{'fileName': 'Assets/Portfolio Projects/Acting Up Camp Junior Shows/9.jpg', 'title':'Title #9','desc':'Desc 9'}						
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/1.jpg', 'title':'Title #1','desc':'Desc 1'},
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/2.jpg', 'title':'Title #2','desc':'Desc 2'},
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/3.jpg', 'title':'Title #3','desc':'Desc 3'},
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/4.jpg', 'title':'Title #4','desc':'Desc 4'},
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/5.jpg', 'title':'Title #5','desc':'Desc 5'},
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/6.jpg', 'title':'Title #6','desc':'Desc 6'},							
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/7.jpg', 'title':'Title #7','desc':'Desc 7'},
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/8.jpg', 'title':'Title #8','desc':'Desc 8'},
+							{'fileName': 'assets/portfolio_projects/acting_up_camp_junior_shows/9.jpg', 'title':'Title #9','desc':'Desc 9'}						
 						 ]			
 		}		
 	];

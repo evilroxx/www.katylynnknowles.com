@@ -19,7 +19,7 @@ requirejs([
 			'flex/classie',
 			'flex/cbpAnimatedHeader.min',
 			'site/contact_me',
-			'site/Site',
+			'site/site',
 			'site/timelines',
 			'flex/jquery.flex-images.min',
 			'scroll/educator',
