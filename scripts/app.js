@@ -15,7 +15,7 @@ requirejs.config({
 requirejs([
 			'bootstrap/jquery-1.11.0',
 			'bootstrap/bootstrap.min',
-			'bootstrap/jqBootstrapValidation',			
+			'bootstrap/jqBootstrapValidation',
 			'flex/classie',
 			'flex/cbpAnimatedHeader.min',
 			'site/contact_me',
@@ -31,7 +31,7 @@ requirejs([
 		  ],
 function   ($,jQuery,bootstrap,jqBootstrapValidation,classie,cbpAnimatedHeader,contactme,site,timelines,flexImages,educator,controllers,gall1,gall2,gall3,gall4) {
 
-          $('#grid').flexImages({rowHeight: 180});  
-		  
+          $('#grid').flexImages({rowHeight: 180});
+
 		  document.write('<style>.noscript { display: none; }</style>');
 });
