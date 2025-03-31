@@ -144,4 +144,9 @@ ktkApp.controller('ktkController', function($scope){
 		//alert('../' + projects[projectID].thumbNails[0].fileName);
 	}
 
+	$scope.Project = {
+        thumbNails: [
+        ]
+    };
+
 });
