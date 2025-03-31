@@ -57,7 +57,7 @@ hr.star-primary:after {
 
 hr.star-light {
     /*border-color: #fff;*/ /*TODO: Rohan*/
-	border: 5px solid #fff;	
+	border: 5px solid #fff;
 }
 
 hr.star-light:after {
@@ -96,7 +96,7 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .skills {	
+header .intro-text .skills {
 	text-transform: uppercase; /*TODO: Rohan*/
     font-size: 1.25em;
     font-weight: 300;
@@ -107,11 +107,11 @@ header .intro-text .skills {
 	header, section, footer.page-footer{
 		margin: 0 auto;
 		width: 992px;
-		-moz-box-shadow: 10px 10px 25px #000; 
-		-webkit-box-shadow: 10px 10px 25px #000; 
+		-moz-box-shadow: 10px 10px 25px #000;
+		-webkit-box-shadow: 10px 10px 25px #000;
 		box-shadow: 5px 5px 15px #000;
 	}
-	
+
     header .container {
         width: 992px;
         /*padding-top: 150px; /*TODO: Rohan 200px; *-/
@@ -125,17 +125,17 @@ header .intro-text .skills {
     footer .container{
         width: 992px;
     }
-	
+
 	header .intro-text{
 		margin-top:80px;
 	}
-		
+
 	header .intro-text .skills {
 		text-transform: uppercase; /*TODO: Rohan*/
         font-size: 2em; /*TODO: Rohan 1.75*/
 		font-weight: 700; /*TODO: Rohan*/
     }
-	
+
 	.navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
@@ -159,8 +159,8 @@ header .intro-text .skills {
     }
 }
 
-@media(max-width:1219px) {    
-    
+@media(max-width:1219px) {
+
 }
 
 .navbar {
@@ -174,7 +174,7 @@ header .intro-text .skills {
 }
 
 .navbar .navbar-nav {
-    /*letter-spacing: 1px;*/	    
+    /*letter-spacing: 1px;*/
     margin: 0px -10px;
 }
 
@@ -203,7 +203,6 @@ background-color: transparent;
 .navbar-default .navbar-nav > li > a {
 	font-size: 20px;
 }
-
 
 .navbar-default,
 .navbar-inverse {
@@ -334,8 +333,8 @@ footer .footer-below {
     -moz-transition:  all .3s ease-in-out;
     -ms-transition:  all .3s ease-in-out;
 }
-.floater{	
-	text-align:right;	
+.floater{
+	text-align:right;
 }
 
 .btn-outline:hover,
@@ -435,41 +434,40 @@ footer .footer-below {
     margin: 0;
 }
 
-#portfolio .portfolio-item {    
-    margin: 0px 5px 5px;		
-	height:100px;	
-	text-align:center;	
+#portfolio .portfolio-item {
+    margin: 0px 5px 5px;
+	height:100px;
+	text-align:center;
 	text-transform: uppercase;
 	background-color:#580058;
 	font-weight:bold;
-	
-	border-radius:15%; 			
-	border: 2px solid #c8c8cf; 
-	-webkit-border-radius: 15%; 
+
+	border-radius:15%;
+	border: 2px solid #c8c8cf;
+	-webkit-border-radius: 15%;
 	-moz-border-radius: 15%;
 
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
     -moz-transition:  all .3s ease-in-out;
-    -ms-transition:  all .3s ease-in-out;	
+    -ms-transition:  all .3s ease-in-out;
 }
 
 #portfolio .portfolio-item:hover{
-	background-color:#ffccff;	
+	background-color:#ffccff;
 }
 
-#portfolio .portfolio-item:hover a{	
-	color:#580058;	
+#portfolio .portfolio-item:hover a{
+	color:#580058;
 }
-
 
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 500px;
-	color:#fff;	
-	font-size:14px;	
+	color:#fff;
+	font-size:14px;
 }
 
 .vertical-align {
@@ -480,8 +478,8 @@ footer .footer-below {
   transform: translateY(-50%);
 }
 
-#portfolio hr.star-light {    
-	border: 5px solid #ccc;	
+#portfolio hr.star-light {
+	border: 5px solid #ccc;
 }
 
 .portfolio-modal .modal-content {

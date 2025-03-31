@@ -424,7 +424,7 @@ label {
   background-color: #5bbcd5;
   padding: 5em 0; }*/
 
-.timeline {    
+.timeline {
   list-style: none;
   position: relative;
   max-width: 768px; /*TODO: Rohan*/
@@ -452,7 +452,7 @@ label {
       position: absolute;
       right: 50%;
       /*top: 31px;*/ /*TODO: Rohan*/
-	  top: 40px; 
+	  top: 40px;
       text-align: right;
       margin-right: 40px;
       font-size: 16px;
@@ -511,7 +511,7 @@ label {
         margin: 0 auto;*/
 		float:left;
 		padding:2px;
-      }        
+      }
       .timeline .timeline-row .timeline-content h2 {
         font-size: 22px;
         margin-bottom: 12px;

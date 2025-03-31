@@ -2,7 +2,7 @@
 	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
 	display: none;
 	float: right;
-	width: 550px; 
+	width: 550px;
 }
 #page div.content a, #page div.navigation a {
 	text-decoration: none;
@@ -120,7 +120,7 @@
 }
 #page ul.thumbs img {
 	border: none;
-	display: block;	
+	display: block;
 	width:75px;
 	height:70px;
 	margin-bottom:0px;
