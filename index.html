@@ -1,884 +1,1182 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="ktkApp">
-	<head>
-		<base href="/">
-		<meta charset="utf-8">
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Katy Lynn Knowles — Theatre Educator, Director &amp; Choreographer</title>
+<meta name="description" content="Katy Lynn Knowles — theatre educator, director, and choreographer. Selected productions, teaching philosophy, and a working journey through the field." />
 
-		<!--TODO: Favorite-->
-		<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link rel="manifest" href="manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png" />
+<meta name="theme-color" content="#f4ede0" />
 
-		<title>Katy Lynn Knowles</title>
+<!-- Open Graph / Social -->
+<meta property="og:title" content="Katy Lynn Knowles" />
+<meta property="og:description" content="Theatre educator, director, and choreographer. I make theatre that asks questions." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://katylynnknowles.com" />
+<meta property="og:image" content="assets/preview-editorial.png" />
+<meta name="twitter:card" content="summary_large_image" />
 
-		<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
 
-		<!-- Custom CSS -->
-		<link href="css/site.css" rel="stylesheet">
-		<!-- Custom Fonts -->
-		<!--<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" media="all" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Great+Vibes:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<style>
+  :root {
+    /* Palette (default: warm cream / ink / terracotta) */
+    --paper: #f4ede0;
+    --paper-2: #ebe2d0;
+    --paper-3: #e2d6bf;
+    --ink: #1a1714;
+    --ink-2: #3a3530;
+    --mute: rgba(26, 23, 20, 0.58);
+    --rule: rgba(26, 23, 20, 0.16);
+    --accent: #a8412c;
+    --accent-soft: rgba(168, 65, 44, 0.12);
 
-		<link href="css/timelines.css" media="all" rel="stylesheet">
-		<link href="css/add.css" media="all" rel="stylesheet">
-		<link href="css/basic.css" rel="stylesheet">
-		<link href="css/galleriffic-2.css" rel="stylesheet" type="text/css" />
+    /* Type */
+    --font-display: "Instrument Serif", "Cormorant Garamond", Georgia, serif;
+    --font-body: "Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body id="page-top" class="index" ng-controller="ktkController">
-	<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#page-top">Katy Knowles</a>
-			</div>
+    --gutter: clamp(20px, 4vw, 56px);
+    --section-y: clamp(80px, 10vw, 160px);
+  }
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="hidden">
-						<a href="#page-top"></a>
-					</li>
-					<li class="page-scroll">
-						<a href="#about">Artist</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#educator">Educator</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#journey">Journey</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#portfolio">Portfolio</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#resume">Resume</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#Testimon">Testimonials</a>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
+  /* Palette: midnight (theatrical) */
+  [data-palette="midnight"] {
+    --paper: #131214;
+    --paper-2: #1c1a1d;
+    --paper-3: #25232a;
+    --ink: #f1ebe0;
+    --ink-2: #c8c0b3;
+    --mute: rgba(241, 235, 224, 0.55);
+    --rule: rgba(241, 235, 224, 0.18);
+    --accent: #d68a5c;
+    --accent-soft: rgba(214, 138, 92, 0.16);
+  }
 
-	<!-- Header -->
-	<header>
-		<div class="container">
-			<div class="row">
-			  <div class="col-lg-6">
-				<div class="overlayImg">
-				  <div class="baseImg"></div>
-				</div>
-			  </div>
-			  <div class="col-lg-5">
-				<div class="row">
-					<div class="intro-text">
-					  <hr class="star-light">
-					  <span class="skills">theatre educator director choreographer</span>
-					</div>
-				</div>
-			  </div>
-			  <div class="col-lg-1"></div>
-			</div>
-			<div class="row floater">
-				<div class="page-scroll">
-					<ul class="list-inline">
-						<li>
-							<a href="https://katy-knowles.tumblr.com/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-tumblr"></i></a>
-						</li>
-						<li>
-							<a href="https://instagram.com/katyknowles/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-						</li>
-						<li>
-							<a href="#contact" class="btn-social btn-outline"><i class="fa fa-fw fa-phone-square"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+  /* Palette: paper (cool monochrome) */
+  [data-palette="paper"] {
+    --paper: #f6f5f1;
+    --paper-2: #ecebe5;
+    --paper-3: #e1dfd6;
+    --ink: #15161a;
+    --ink-2: #353740;
+    --mute: rgba(21, 22, 26, 0.55);
+    --rule: rgba(21, 22, 26, 0.15);
+    --accent: #2c4a6b;
+    --accent-soft: rgba(44, 74, 107, 0.1);
+  }
 
-	<!-- About Section -->
-	<section class="about" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p class="text-center">
-					<img style="max-width: 100%; height:auto;" src="img/site/artist/final.png"/>
-					</p>
-				</div>
-			</div>
+  /* Palette: oxblood */
+  [data-palette="oxblood"] {
+    --paper: #ede4d4;
+    --paper-2: #e3d8c4;
+    --paper-3: #d6c8af;
+    --ink: #20120f;
+    --ink-2: #4a2a24;
+    --mute: rgba(32, 18, 15, 0.6);
+    --rule: rgba(32, 18, 15, 0.18);
+    --accent: #6a1d20;
+    --accent-soft: rgba(106, 29, 32, 0.12);
+  }
 
-			<!--<div class="row">
-				<div class="col-md-12">
-					<h3 class="text-center">Artistic Core Values</h3>
-				</div>
-			</div>-->
+  /* Type pairing variants */
+  [data-type="classic"] {
+    --font-display: "Instrument Serif", Georgia, serif;
+    --font-body: "Inter Tight", system-ui, sans-serif;
+  }
+  [data-type="sansforward"] {
+    --font-display: "Inter Tight", system-ui, sans-serif;
+    --font-body: "Inter Tight", system-ui, sans-serif;
+  }
+  [data-type="literary"] {
+    --font-display: "Instrument Serif", Georgia, serif;
+    --font-body: "Instrument Serif", Georgia, serif;
+  }
 
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h3>Artistic Core Values</h3>
-					<hr class="star-light">
-				</div>
-			</div>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-body);
+    background: var(--paper);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    line-height: 1.55;
+    transition: background 220ms ease, color 220ms ease;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent); color: var(--paper); }
 
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-5">
-					<p class="text-justify small">
-					<ul>
-					  <li>I utilize collaboration, communication and organization skills during the rehearsal process as well as examine rehearsal techniques in order to determine what is effective and successful as a director</li>
-					  <li>I research and question playwrights, scripts, and human behavior to develop a process for approaching the material and characters in an honest and inquisitive fashion</li>
-					  <li>I use images and quotations as a major research component to communicate with actors and designers when working on productions</li>
-					  <li>I go on a collaborative journey with my actors in a safe and honest environment by utilizing a broad range of techniques and strategies in character analysis and development in order to help the actors make strong personal connections to the characters they are portraying</li>
-					  <li>I believe the journey and process is just as IMPORTANT as the final product</li>
-					</ul>
-					</p>
-				</div>
-				<div class="col-md-5">
-				  <p class="text-justify small">
-					<ul>
-					  <li>I provide thought provoking, constructive critique to my performers in an honest and positive fashion allowing them an opportunity to reflect, evolve and grow during the rehearsal process</li>
-					  <li>I create a safe and positive rehearsal environment, which allows performers and designers to explore, discover, collaborate, question, and work outside their comfort zones</li>
-					  <li>I encourage my actors to think independently, to make bold choices with fearless attitudes and to take risks</li>
-					  <li>I lead with a clear objective and agenda to maintain an organized, sane, and focused production process where empowerment and collaboration are encouraged</li>
-					  <li>I produce engaging pieces of theatre that will ask audience members to question, reflect, and communicate about their past, present, and future by exposing them to uncensored snapshots of life and the world in which we live</li>
-					</ul>
-					</p>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-		</div>
-	</section>
-	<!-- About Section -->
+  /* ---------- Layout ---------- */
+  .shell { max-width: 1480px; margin: 0 auto; padding: 0 var(--gutter); }
+  .section { padding: var(--section-y) 0; position: relative; }
+  .section + .section { border-top: 1px solid var(--rule); }
 
-	<!-- Educator Section -->
-	<section class="educator" id="educator">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h3>Teaching Philosophy</h3>
-					<hr class="star-light">
-				</div>
-			</div>
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mute);
+    font-weight: 500;
+  }
+  .display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.015em;
+  }
+  .display em, .display .italic { font-style: italic; }
 
-			<!--<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
-				</div>
-				<div class="col-md-1"></div>
-			</div>-->
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
+  .h-1 { font-size: clamp(48px, 8.5vw, 132px); }
+  .h-2 { font-size: clamp(40px, 6vw, 88px); }
+  .h-3 { font-size: clamp(28px, 3.6vw, 56px); }
+  .h-4 { font-size: clamp(22px, 2.4vw, 34px); }
 
-				  <!--<h3 class="text-center">Teaching Philosophy</h3>-->
-				  <p class="text-justify small">
-					I am a strong advocate for providing students with an opportunity to achieve success in the performing arts by presenting students with a freedom to explore their own sense of self, their cultures, and the world in which they live. My mission is to enrich students’ lives through performance and theatre education with challenging learning activities that engage students’ minds, hearts, and bodies so that students will learn to appreciate and understand the role and influence of the performing arts on culture and society. Through their enrichment students will attain higher levels of academic achievement, gain self-esteem, and obtain higher levels of empathy and tolerance for others. This can only be achieved by providing students with a safe and creative environment where students can celebrate their differences by integrating academics, performance, and life into preparation to become responsible citizens in our 21st century pluralistic society.
-				  </p>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-			<br/><br/>
-			<div class="row border-up1">
-				<div class="col-md-1">&nbsp;</div>
-				<div class="col-md-10">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-4"></div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<img src="img/site/educator/educator3.jpg" />
-								<br/>
-								<br/>
-								<img src="img/site/educator/educator4.jpg" />
-							</div>
-							<div class="col-md-4">
-								<h5 class="text-center">Artistic Inspirations</h5>
-								<p class="text-center" style="font-size:15px;">
-									Neil LaBute<br/>
-									Cole Porter<br/>
-									Constantin Stanislavski<br/>
-									Bob Fosse<br/>
-									Anne Bogart<br/>
-									Jason Robert Brown<br/>
-									Jerome Robbins<br/>
-									Sanford Meisner<br/>
-									Gregory Hines<br/>
-								</p>
-							</div>
-							<div class="col-md-3 text-center" style="vertical-align: middle; display: inline-block; height: 100%;">
-								<img style="display: inline-block; height: 100%;" src="img/site/educator/educator6.jpg" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-4"></div>
-							<div class="col-md-3"></div>
-						</div>
-					</div>
-				</div>
-				<!--<div class="col-md-1">&nbsp;</div>-->
-			</div>
-		</div>
-	</section>
-	<!-- Educator Section -->
+  .body-lg { font-size: clamp(18px, 1.4vw, 22px); line-height: 1.5; }
+  .body-md { font-size: 16px; line-height: 1.7; }
+  .body-sm { font-size: 14px; line-height: 1.6; color: var(--ink-2); }
 
-		<!--Artistic Journey Timeline -->
-	<section id="journey" class="journey">
-		<div>
-	  <p class="journey">It's not about the destination, it's about the <span class="great-vibe">Journey...</span></p>
-	  <!--<img class="img-centered img-responsive" width="250" src="img/site/journey/destination.jpg" />-->
-	</div>
-	  <div class="timeline animated">
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2004
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-				<img class="img-responsive" width="70" src="img/site/journey/amda_350_01.jpg" />
-				<p>
-					<b class="text-uppercase">American Musical & Dramatic Academy</b>
-					<br/>
-					<span class="text-uppercase">Musical Theatre Integrated Program</span>
-				</p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2005-2008
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-						<img class="img-responsive" width="70" src="img/site/journey/fsoa-01.jpg" />
-				<b class="text-uppercase">Florida School of the Arts</b>
-				<br/>
-				<span class="text-uppercase">Associates in Science in Musical Theatre</span>
-				<br/>
-				<span class="text-uppercase">Associates in Arts</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2007
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info"> <!--bg-primary-->
-				<!--<i class="fa fa-pencil"></i>-->
-				<i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<b class="text-uppercase">The Kennedy Center: Irene Ryan Nomination</b>
-				<br/>
-				<span class="text-uppercase">Barefoot in the Park - Mother</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2008
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-pencil"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<b class="text-uppercase">Florida School of the Arts</b>
-				<br/>
-				 <span class="text-uppercase">Performing Artist of the Year Award</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2008
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-pencil"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<b class="text-uppercase">International Thespian Society</b>
-				<br/>
-				 <span class="text-uppercase">District Six Musical Theatre Adjudicator</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2008-2009
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<img class="img-responsive" width="70" src="img/site/journey/asolo_rep.gif" />
-				<b class="text-uppercase">Asolo Repertory Theatre</b>
-				<br/>
-				<span class="text-uppercase">Stage Management Intern</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2009
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-pencil"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<b class="text-uppercase">Florida Theatre Conference</b>
-				<br/>
-				 <span class="text-uppercase">Theatre For Youth Adjudicator</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2009
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-pencil"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<b class="text-uppercase">Equity Membership Candidacy Program</b>
-				<br/>
-				 <span class="text-uppercase">Card holder</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2009-2010
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<img class="img-responsive" width="70" src="img/site/journey/lrhs.png" />
-				<b class="text-uppercase">Lakewood Ranch High School</b>
-				<br/>
-				<span class="text-uppercase">Musical Theatre Artist in Residency</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2010
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-pencil"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<b class="text-uppercase">International Thespian Society</b>
-				<br/>
-				 <span class="text-uppercase">District Six Musical Theatre Adjudicator</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2010-2011
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<img class="img-responsive" width="70" src="img/site/journey/gb_coll_01.jpg" />
-				<b class="text-uppercase">Greensboro College</b>
-				<br/>
-				<span class="text-uppercase">Bachelor of Arts in Acting</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2011
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<img class="img-responsive" width="70" src="img/site/journey/gc_perf_arts_01.jpg" />
-				<b class="text-uppercase">Greensboro Performing Arts</b>
-				<br/>
-				<span class="text-uppercase">Director / Choreographer Teaching Artist</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2011-2013
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<img class="img-responsive" width="70" src="img/site/journey/man_hs_01.jpg" />
-				<b class="text-uppercase">Manatee High School</b>
-				<br/>
-				<span class="text-uppercase">Theatre and Dance Director</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2011-2013
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<img class="img-responsive" width="70" src="img/site/journey/davis_01.jpg" />
-				<b class="text-uppercase">Davis Center for the Performing Arts</b>
-				<br/>
-				 <span class="text-uppercase">Theatre Manager</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-		<div class="timeline-row">
-		  <div class="timeline-time">
-			2013-Present
-		  </div>
-		  <div class="timeline-icon">
-			<div class="bg-info">
-			  <!--<i class="fa fa-camera"></i>-->
-			  <i class="fa"></i>
-			</div>
-		  </div>
-		  <div class="panel timeline-content">
-			<div class="panel-body">
-			  <p>
-				<img class="img-responsive" width="70" src="img/site/journey/nyu_logo_01.jpg" />
-				<b class="text-uppercase">New York University</b>
-				<br/>
-				 <span class="text-uppercase">Master of Arts</span>
-				 <br/>
-				 <span class="text-uppercase">Educational Theatre - Colleges & Communities</span>
-			  </p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</section>
-	<!--Artistic Journey Timeline -->
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 32px 0;
+  }
 
-	<!--Portfolio Section-->
-	<section id="portfolio" class="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h3>Portfolio</h3>
-					<hr class="star-light">
-				</div>
-			</div>
-			<br/>
-			<div class="row">
-				<div class="col-sm-3"></div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(0)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">Behind<br/>Closed<br/>Doors</span>
-					</a>
-				</div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(1)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">The<br/>Wedding<br/>Singer</span>
-					</a>
-				</div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(2)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">Broadway<br/>Musical<br/>Revue</span>
-					</a>
-				</div>
-				<div class="col-sm-3"></div>
-			</div>
-			<div class="row">
-				<div class="col-sm-3"></div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(3)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">Drowsy<br/>Chaperone</span>
-					</a>
-				</div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(4)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">Seussical<br/>Jr.</span>
-					</a>
-				</div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(5)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">Wonderful<br/>Town</span>
-					</a>
-				</div>
-				<div class="col-sm-3"></div>
-			</div>
-			<div class="row">
-				<div class="col-sm-3"></div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(6)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">Anything<br/>goes</span>
-					</a>
-				</div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" ng-click="ShowPortfolioProject(7)" class="portfolio-link vertical-align" data-toggle="modal">
-						<span class="portfolio-caption">Acting Up<br/>Camp<br/>Jr. Shows</span>
-					</a>
-				</div>
-				<div class="col-sm-2 portfolio-item">
-					<a href="#" class="portfolio-link vertical-align" data-toggle="modal" data-target="#portfolioModal2">
-						<span class="portfolio-caption">Director /<br/>Choreographer<br/>Video Reel</span>
-					</a>
-				</div>
-				<div class="col-sm-3"></div>
-			</div>
-		</div>
-	</section>
+  .section-head {
+    display: grid;
+    grid-template-columns: minmax(0, 220px) 1fr;
+    gap: clamp(24px, 4vw, 80px);
+    align-items: baseline;
+    margin-bottom: clamp(40px, 5vw, 80px);
+  }
+  .section-head .num { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.16em; color: var(--mute); }
+  .section-head h2 { margin: 0; }
+  .section-head .lead { max-width: 56ch; color: var(--ink-2); }
 
-	<!-- resume Grid Section -->
-	<section id="resume" class="resume">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h3>Resumé</h3>
-					<hr class="star-light">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-2"></div>
-				<div class="col-sm-4 resume-item">
-					<a href="assets/k_knowles_artistic_resume.pdf" target="_blank" class="resume-link">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="img/site/resume/dir_choreo.png" class="img-responsive" alt="">
-					</a>
-				</div>
-				<div class="col-sm-4 resume-item">
-				<a href="assets/k_knowles_cv_official.pdf" target="_blank" class="resume-link">
-						<div class="caption">
-							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="img/site/resume/cv.png" class="img-responsive" alt="">
-					</a>
-				</div>
-				<div class="col-sm-2"></div>
-			</div>
-		</div>
-	</section>
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in oklab, var(--paper) 88%, transparent);
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap: 24px;
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-mark {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--paper);
+    display: grid; place-items: center;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1;
+    padding-bottom: 2px;
+  }
+  .nav-links {
+    display: flex; gap: clamp(8px, 1.5vw, 24px);
+    list-style: none; margin: 0; padding: 0;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .nav-links a {
+    color: var(--ink-2);
+    padding: 6px 4px;
+    position: relative;
+    transition: color 160ms ease;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links a.active { color: var(--accent); }
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 4px; right: 4px;
+    bottom: -2px;
+    height: 1px;
+    background: var(--accent);
+  }
+  .nav-cta {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: 1px solid var(--ink);
+    padding: 8px 14px;
+    border-radius: 100px;
+    transition: all 160ms ease;
+  }
+  .nav-cta:hover { background: var(--ink); color: var(--paper); }
 
-	<!--Testimonial Section-->
-	<section class="Testimonials" id="Testimon">
-	  <div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h3 class="text-center testimonial">Testimonials</h3>
-				<hr class="star-light">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-1"></div>
-			<div class="col-lg-10">
-				<blockquote>
-					<p>I have experience with Katy Knowles as a performer, a teacher, a director and a friend. I admire the way Katy approaches every goal with enthusiasm and intensity. As a performer, she easy to direct and always goes full out with great
-					insight to what you are trying to achieve. The teacher in Katy not only relates well to students of any age in any situation but Katy maintains her own ability to be that life long learner herself. When working on any show or project with Katy, as
-					a friend, I can count on her to ALWAYS go the extra mile be it 9 to 5 or 2:00 AM if necessary! Katy Knowles is fantastic energy and fortitude in the theater and beyond!</p>
-					<footer class="blockquote-footer">Patricia Ross, Teacher/ Director/Choreographer, Manatee School For the Arts</footer>
-				</blockquote>
-				<blockquote class="blockquote-reverse">
-					<p>It has been a distinct pleasure to work with Katy Knowles while she studied here at Florida School of the Arts. Her dedication, understanding and mastery of the art form was a welcomed addition to our program. I remain honored to
-					be counted among her extensive and varied network of theatre educators and professionals.</p>
-					<footer class="blockquote-footer">Edward T. Kelly, Theatre Professor, Florida School of the Arts</footer>
-				</blockquote>
-				<blockquote>
-					<p>She is a positive force to the entire faculty, staff, student body and community. As an employee she is extremely hard working and dedicated, and takes initiative to go above and beyond her job duties. As a person, Katy is an artistic
-					perfectionist and sets extremely high standards for both herself and her students. She is a master of instructional design and lesson planning, delivery and facilitation of the lesson, and student engagement and self-reflection.
-					The talent that Ms. Knowles has developed in our students is exceptional and can rival that of professional talent. She is a positive role model for students and is well respected amongst her colleagues.</p>
-					<footer class="blockquote-footer">Melissa Gagnon, Assistant Principal, Braden River High School</footer>
-				</blockquote>
-				<blockquote class="blockquote-reverse">
-					<p>While working at the Asolo Katy was the assistant stage manager for four productions. Katy always displayed a high degree of organization, responsibility, and ambition. She is a clear and effective communicator, has a very positive
-					attitude and is a natural leader. With very little formal stage management training Katy was able to create suburb paperwork, run entire understudy rehearsals with very little direction and manage an IATSE crew twice her age.</p>
-					<footer class="blockquote-footer">Kelly Borgia, Resident Production Stage Manager, Asolo Repertory Theatre</footer>
-				</blockquote>
-				<blockquote>
-					<p>Working with Katy Knowles on Behind Closed Doors was such a blessing! She really pushed us as actors to explore every facet of our characters psyche and conflicts, which helped us create a collectively powerful performance as a cast.</p>
-					<footer class="blockquote-footer">Mary Ashley, Actor</footer>
-				</blockquote>
-				<blockquote class="blockquote-reverse">
-					<p>Before high school I had never been a part of any theatre production or dance class in my entire life, however, my freshman year, I  began working with Ms. Katy Knowles and since then have learned so much from her; anything from tap dancing to technical theatre. Now, I plan on majoring in theatre, realizing that I will use many of the skills I have learned from her for the rest for my life. Ms. Knowles has extensive knowledge in all areas, but is successful in guiding students of all abilities through the learning process. Her passion for the arts has inspired me and continues to inspire everyone else she works with.</p>
-					<footer class="blockquote-footer">Kylee Risdon, High School Student</footer>
-				</blockquote>
-			</div>
-			<div class="col-lg-1"></div>
-		</div>
-	  </div>
-	</section>
+  @media (max-width: 840px) {
+    .nav-links { display: none; }
+  }
 
-	<!-- Footer -->
-	<footer id="contact" class="contact page-footer text-center">
-		<div class="footer-above">
-			<div class="container">
-				<div class="row">
-					<div class="footer-col col-md-4">
-						<img src="img/site/footer/footerImg.png" style="max-width:75%; height:auto;" alt="footerImg" />
-					</div>
-					<div class="footer-col col-md-8">
-						<hr class="star-light"/>
-						<h2>Katy Lynn Knowles</h2>
-						<h4>katyknowles@hotmail.com</h4>
-						<h4>(941)-447-4521</h4>
-						<ul class="list-inline">
-							<li>
-								<a href="https://katy-knowles.tumblr.com/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-tumblr"></i></a>
-							</li>
-							<li>
-								<a href="https://instagram.com/katyknowles/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-below">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						Copyright &copy; 2014 <a href="https://www.katylynnknowles.com">Katy Lynn Knowles</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+  /* ---------- Hero ---------- */
+  .hero { padding-top: clamp(48px, 7vw, 96px); padding-bottom: clamp(60px, 8vw, 120px); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(28px, 5vw, 80px);
+    align-items: end;
+  }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
 
-	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-	<div class="scroll-top page-scroll visible-xs visble-sm">
-		<a class="btn btn-primary" href="#page-top">
-			<i class="fa fa-chevron-up"></i>
-		</a>
-	</div>
+  .hero-meta {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 3vw, 36px);
+  }
+  .hero-pos {
+    font-family: var(--font-display);
+    font-size: clamp(54px, 9.5vw, 156px);
+    line-height: 0.92;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .hero-pos .accent { color: var(--accent); }
+  .hero-pos em { font-style: italic; color: var(--ink-2); }
 
-	<!-- Start portfolio modal -->
-	<div class="portfolio-modal modal fade noscript" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-		<div class="modal-content">
-			<div class="close-modal" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl">
-					</div>
-				</div>
-			</div>
-			<div id="page">
-				<div id="container">
-					<h2>{{Project.projName}}</h2>
-					<h3>{{Project.projDesc}}</h3>
+  .hero-roles {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .hero-roles .dot { color: var(--accent); }
 
-					<!-- Start Advanced Gallery Html Containers -->
-					<div id="gallery" class="content">
-						<div id="controls" class="controls"></div>
-						<div class="slideshow-container">
-							<div id="loading" class="loader"></div>
-							<div id="slideshow" class="slideshow"></div>
-						</div>
-						<div id="caption" class="caption-container"></div>
-					</div>
-					<div id="thumbs" class="navigation">
-						<ul class="thumbs noscript">
-							<li ng-repeat="thmb in Project.thumbNails">
-								<a class="thumb" name="{{Project.projID}}" href="{{thmb.fileName}}" title="{{thmb.title}}">
-									<img src="{{thmb.fileName}}" alt="{{thmb.title}}" />
-								</a>
-								<!--<div class="caption">
-									<div class="download">
-										<a href="{{thmb.fileName}}">Download Original</a>
-									</div>
-									<div class="image-title">{{thmb.title}}</div>
-									<div class="image-desc">{{thmb.desc}}</div>
-								</div>-->
-							</li>
-						</ul>
-					</div>
-					<div style="clear: both;"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Portfolio Modal-->
+  .hero-portrait {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--paper-2);
+  }
+  .hero-portrait img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    filter: contrast(1.02) saturate(0.95);
+  }
+  .hero-portrait::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 60%, color-mix(in oklab, var(--paper) 35%, transparent) 100%);
+    pointer-events: none;
+  }
+  .hero-caption {
+    position: absolute;
+    left: 16px; bottom: 16px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: rgba(0,0,0,0.35);
+    padding: 6px 10px;
+    border-radius: 100px;
+    backdrop-filter: blur(6px);
+  }
 
-<!-- Start portfolio modal 2-->
-	<div class="portfolio-modal modal fade noscript" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-		<div class="modal-content">
-			<div class="close-modal" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl">
-					</div>
-				</div>
-			</div>
-			<div>
-                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { margin:0 auto; width: 50%; height: 50%; }</style><div class='embed-container'><iframe src='//player.vimeo.com/video/116821343' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-            </div>
-		</div>
-	</div>
-	<!-- End Portfolio Modal 2-->
+  .hero-foot {
+    margin-top: clamp(40px, 6vw, 80px);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+  }
+  .hero-foot .col { font-size: 13px; color: var(--ink-2); }
+  .hero-foot .meta-num {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1;
+    color: var(--accent);
+  }
 
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
-	<script data-main="scripts/app.js" src="/scripts/require.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>-->
-	<!--Javascript sources -->
-	<!-- jQuery Version 1.11.0 -->
-	<script src="scripts/lib/jquery-1.11.0.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-	<script type="text/javascript" src="scripts/lib/dynamic/controllers.js"></script>
-	<!-- Bootstrap Core JavaScript -->
-	<script src="scripts/lib/bootstrap/bootstrap.min.js"></script>
+  /* Marquee hero variant */
+  .marquee-name {
+    font-family: var(--font-display);
+    line-height: 0.86;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+  .marquee-name .line { display: block; }
+  .marquee-name .first { font-size: clamp(80px, 16vw, 240px); }
+  .marquee-name .last  { font-size: clamp(80px, 16vw, 240px); font-style: italic; padding-left: clamp(40px, 12vw, 200px); color: var(--accent); }
+  .marquee-band {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 0.6fr;
+    gap: 24px;
+    align-items: stretch;
+    margin-top: clamp(28px, 4vw, 56px);
+  }
+  .marquee-band .strip {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: var(--paper-2);
+  }
+  .marquee-band .strip img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  .marquee-band .pull {
+    align-self: end;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(20px, 2.2vw, 32px);
+    line-height: 1.2;
+    color: var(--ink-2);
+    padding: 24px 0;
+  }
 
-	<!-- Contact Form JavaScript -->
-    <script src="scripts/lib/site/jqBootstrapValidation.js"></script>
-    <script src="scripts/lib/site/contact_me.js"></script>
+  /* Portrait hero variant */
+  .portrait-hero { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 80px); align-items: stretch; min-height: 78vh; }
+  @media (max-width: 900px) { .portrait-hero { grid-template-columns: 1fr; min-height: auto; } }
+  .portrait-hero .left { display: flex; flex-direction: column; justify-content: space-between; padding: clamp(20px, 3vw, 40px) 0; }
+  .portrait-hero .name {
+    font-family: var(--font-display);
+    font-size: clamp(60px, 11vw, 180px);
+    line-height: 0.9;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .portrait-hero .name .it { font-style: italic; color: var(--accent); }
+  .portrait-hero .right { background: var(--paper-2); overflow: hidden; }
+  .portrait-hero .right img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="scripts/lib/site/site.js"></script>
-  	<script src="scripts/lib/site/timelines.js"></script>
+  /* ---------- Star rule (theatrical motif) ---------- */
+  .star-rule {
+    display: flex; align-items: center; gap: 12px;
+    color: var(--mute);
+  }
+  .star-rule::before, .star-rule::after {
+    content: ""; flex: 1; height: 1px; background: var(--rule);
+  }
+  .star-rule svg { width: 12px; height: 12px; opacity: 0.6; }
 
-	<script src="scripts/lib/site/classie.js"></script>
-    <script src="scripts/lib/site/cbpAnimatedHeader.js"></script>
+  /* ---------- About / Values ---------- */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(20px, 2.6vw, 40px);
+  }
+  @media (max-width: 800px) { .values-grid { grid-template-columns: 1fr; } }
+  .value {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 16px;
+    padding: 20px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .value .idx {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    padding-top: 4px;
+  }
+  .value p { margin: 0; font-size: 15.5px; line-height: 1.65; color: var(--ink-2); }
+  .value p strong { color: var(--ink); font-weight: 600; }
 
-	<script type="text/javascript" src="scripts/lib/galleriffic/jquery.galleriffic.js"></script>
-	<script type="text/javascript" src="scripts/lib/galleriffic/jquery.opacityrollover.js"></script>
-	<script type="text/javascript">
-		document.write('<style>.noscript { display: none; }</style>');
-	</script>
+  .pull-quote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(28px, 4.5vw, 56px);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    max-width: 22ch;
+    margin: 0;
+  }
+  .pull-quote .accent { color: var(--accent); }
 
-	<!--<script type="text/javascript" src="/scripts/lib/galleriffic/galleriffic_loader.js"></script>-->
-  </body>
+  /* ---------- Educator ---------- */
+  .educator-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(28px, 4vw, 64px);
+    align-items: start;
+  }
+  @media (max-width: 900px) { .educator-grid { grid-template-columns: 1fr; } }
+
+  .philosophy { font-size: clamp(18px, 1.4vw, 22px); line-height: 1.55; color: var(--ink-2); }
+  .philosophy .first { font-family: var(--font-display); font-size: clamp(28px, 3.4vw, 44px); float: left; line-height: 0.85; padding: 8px 12px 0 0; color: var(--accent); }
+
+  .inspirations {
+    background: var(--paper-2);
+    padding: clamp(24px, 3vw, 40px);
+    border-radius: 2px;
+  }
+  .inspirations h4 {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin: 0 0 20px 0;
+    font-weight: 500;
+  }
+  .inspirations ul { list-style: none; margin: 0; padding: 0; }
+  .inspirations li {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 1.8vw, 26px);
+    line-height: 1.4;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .inspirations li:last-child { border-bottom: none; }
+  .inspirations li .craft {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .inspirations li:hover { color: var(--accent); }
+
+  /* ---------- Journey ---------- */
+  .journey-intro {
+    text-align: center;
+    margin-bottom: clamp(40px, 6vw, 80px);
+  }
+  .journey-intro .big {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(40px, 6vw, 88px);
+    line-height: 1.05;
+    margin: 0;
+  }
+  .journey-intro .big .accent { color: var(--accent); }
+
+  .timeline {
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+  .timeline::before {
+    content: ""; position: absolute;
+    left: 120px; top: 0; bottom: 0;
+    width: 1px;
+    background: var(--rule);
+  }
+  @media (max-width: 700px) { .timeline::before { left: 8px; } }
+
+  .tl-row {
+    display: grid;
+    grid-template-columns: 120px 40px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    align-items: start;
+  }
+  @media (max-width: 700px) { .tl-row { grid-template-columns: 0 40px 1fr; } .tl-year { display: none; } }
+  .tl-year {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    text-align: right;
+    padding-right: 16px;
+    padding-top: 4px;
+  }
+  .tl-dot {
+    position: relative;
+    width: 40px;
+    display: flex; justify-content: center;
+    padding-top: 6px;
+  }
+  .tl-dot::after {
+    content: "";
+    width: 9px; height: 9px;
+    background: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .tl-row.major .tl-dot::after { background: var(--accent); border-color: var(--accent); }
+  .tl-card {
+    padding: 0 0 16px 0;
+  }
+  .tl-card .title {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 1.9vw, 28px);
+    line-height: 1.2;
+    margin: 0 0 2px 0;
+  }
+  .tl-card .sub {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+    line-height: 1.5;
+  }
+  .tl-card .mob-year {
+    display: none;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+  }
+  @media (max-width: 700px) { .tl-card .mob-year { display: block; } }
+
+  /* ---------- Portfolio ---------- */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(12px, 1.6vw, 24px);
+  }
+  @media (max-width: 900px) { .portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+  .portfolio-grid > .pcard { grid-column: span 4; }
+  /* Asymmetric layout */
+  .portfolio-grid > .pcard.tall { grid-column: span 4; grid-row: span 2; }
+  .portfolio-grid > .pcard.wide { grid-column: span 8; }
+  .portfolio-grid > .pcard.half { grid-column: span 6; }
+  @media (max-width: 900px) {
+    .portfolio-grid > .pcard,
+    .portfolio-grid > .pcard.tall,
+    .portfolio-grid > .pcard.wide,
+    .portfolio-grid > .pcard.half { grid-column: span 1; grid-row: auto; }
+  }
+
+  .pcard {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--paper-2);
+    aspect-ratio: 4 / 3;
+    transition: transform 280ms cubic-bezier(.2,.7,.2,1);
+  }
+  .pcard.tall { aspect-ratio: 4 / 5; }
+  .pcard.wide { aspect-ratio: 16 / 9; }
+  .pcard.half { aspect-ratio: 3 / 2; }
+  .pcard:hover { transform: translateY(-2px); }
+  .pcard .img {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    transition: transform 800ms cubic-bezier(.2,.7,.2,1), filter 400ms ease;
+  }
+  .pcard:hover .img { transform: scale(1.04); filter: brightness(0.7); }
+
+  .pcard .meta {
+    position: absolute;
+    inset: 0;
+    padding: clamp(16px, 2vw, 24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6px;
+    color: #fff;
+    background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.55) 100%);
+    opacity: 1;
+    transition: opacity 240ms ease;
+  }
+  .pcard .role {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.92;
+  }
+  .pcard .title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(22px, 2.2vw, 32px);
+    line-height: 1.1;
+    margin: 0;
+  }
+  .pcard .corner {
+    position: absolute;
+    top: 14px; right: 14px;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.7);
+    color: #fff;
+    display: grid; place-items: center;
+    opacity: 0;
+    transition: opacity 220ms ease, transform 220ms ease;
+    transform: translateY(-4px);
+  }
+  .pcard:hover .corner { opacity: 1; transform: translateY(0); }
+  .pcard .corner svg { width: 14px; height: 14px; }
+
+  .pcard.video .img {
+    background-image: linear-gradient(135deg, var(--accent), var(--ink));
+  }
+  .pcard.video::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.15), transparent 60%);
+  }
+
+  /* ---------- Resume ---------- */
+  .resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(20px, 3vw, 40px);
+  }
+  @media (max-width: 800px) { .resume-grid { grid-template-columns: 1fr; } }
+  .resume-card {
+    border: 1px solid var(--rule);
+    padding: clamp(28px, 3vw, 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--paper);
+    transition: background 220ms ease, border-color 220ms ease;
+  }
+  .resume-card:hover { background: var(--paper-2); border-color: var(--ink); }
+  .resume-card .preview {
+    aspect-ratio: 8.5 / 11;
+    overflow: hidden;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+  }
+  .resume-card .preview img { width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: contrast(0.95); }
+  .resume-card .label {
+    font-family: var(--font-mono);
+    font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--mute);
+  }
+  .resume-card h3 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3vw, 40px);
+    margin: 0;
+    line-height: 1.05;
+  }
+  .resume-card .download {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .resume-card .download svg { width: 14px; height: 14px; }
+
+  /* ---------- Testimonials ---------- */
+  .test-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(20px, 2.6vw, 40px);
+  }
+  @media (max-width: 800px) { .test-grid { grid-template-columns: 1fr; } }
+  .test {
+    padding: clamp(24px, 3vw, 36px);
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+  .test::before {
+    content: "\201C";
+    position: absolute;
+    top: -18px;
+    left: 18px;
+    font-family: var(--font-display);
+    font-size: 88px;
+    line-height: 1;
+    color: var(--accent);
+  }
+  .test p {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.4;
+    color: var(--ink-2);
+  }
+  .test footer {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+    line-height: 1.6;
+  }
+  .test footer .name { color: var(--ink); font-weight: 500; }
+
+  /* ---------- Footer / Contact ---------- */
+  .footer {
+    padding: clamp(80px, 10vw, 140px) 0 32px 0;
+    background: var(--paper-2);
+    border-top: 1px solid var(--rule);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: end;
+  }
+  @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr; align-items: start; } }
+  .footer h2 {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 7.5vw, 120px);
+    line-height: 0.95;
+    margin: 0 0 28px 0;
+    letter-spacing: -0.02em;
+  }
+  .footer h2 .it { font-style: italic; color: var(--accent); }
+  .footer .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .footer .contact a {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 2vw, 28px);
+    color: var(--ink-2);
+    border-bottom: 1px solid transparent;
+    transition: color 160ms ease, border-color 160ms ease;
+    width: fit-content;
+  }
+  .footer .contact a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .footer .links {
+    display: flex; gap: 20px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .footer .links a {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--ink-2);
+    border: 1px solid var(--rule);
+    padding: 10px 14px;
+    border-radius: 100px;
+    transition: all 160ms ease;
+  }
+  .footer .links a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .colophon {
+    margin-top: clamp(40px, 6vw, 80px);
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    display: flex; justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  @media (max-width: 600px) { .colophon { flex-direction: column; gap: 8px; } }
+
+  /* ---------- Lightbox ---------- */
+  .lb-backdrop {
+    position: fixed; inset: 0;
+    background: rgba(8, 6, 4, 0.86);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    display: grid; place-items: center;
+    padding: clamp(16px, 3vw, 40px);
+    animation: lbIn 220ms ease;
+  }
+  @keyframes lbIn { from { opacity: 0; } to { opacity: 1; } }
+  .lb {
+    width: min(1280px, 100%);
+    max-height: 92vh;
+    background: var(--paper);
+    color: var(--ink);
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    overflow: hidden;
+    position: relative;
+  }
+  @media (max-width: 900px) { .lb { grid-template-columns: 1fr; max-height: 96vh; } }
+
+  .lb-stage {
+    position: relative;
+    background: var(--ink);
+    aspect-ratio: 16 / 11;
+    overflow: hidden;
+  }
+  .lb-stage .frame { position: absolute; inset: 0; opacity: 0; transition: opacity 360ms ease; }
+  .lb-stage .frame.active { opacity: 1; }
+  .lb-stage .frame img { width: 100%; height: 100%; object-fit: contain; background: var(--ink); }
+
+  .lb-nav-btn {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    width: 44px; height: 44px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    cursor: pointer;
+    transition: background 160ms ease;
+    z-index: 2;
+  }
+  .lb-nav-btn:hover { background: rgba(255,255,255,0.22); }
+  .lb-nav-btn.prev { left: 16px; }
+  .lb-nav-btn.next { right: 16px; }
+  .lb-nav-btn svg { width: 18px; height: 18px; }
+
+  .lb-counter {
+    position: absolute;
+    bottom: 16px; left: 16px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    padding: 6px 10px;
+    border-radius: 100px;
+    z-index: 2;
+  }
+
+  .lb-info {
+    padding: clamp(24px, 2.4vw, 36px);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    overflow-y: auto;
+  }
+  .lb-info .eyebrow { color: var(--accent); }
+  .lb-info h3 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 2.6vw, 40px);
+    line-height: 1.05;
+    margin: 0;
+  }
+  .lb-info .role {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .lb-info .body { color: var(--ink-2); font-size: 14.5px; line-height: 1.65; }
+
+  .lb-thumbs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    margin-top: auto;
+  }
+  .lb-thumb {
+    aspect-ratio: 4/3;
+    background-size: cover; background-position: center;
+    cursor: pointer;
+    opacity: 0.55;
+    transition: opacity 160ms ease;
+    border: 1px solid transparent;
+  }
+  .lb-thumb:hover { opacity: 0.85; }
+  .lb-thumb.active { opacity: 1; border-color: var(--accent); }
+
+  .lb-close {
+    position: absolute;
+    top: 14px; right: 14px;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    cursor: pointer;
+    display: grid; place-items: center;
+    z-index: 3;
+    transition: transform 160ms ease;
+  }
+  .lb-close:hover { transform: rotate(90deg); }
+  .lb-close svg { width: 14px; height: 14px; }
+
+  /* ---------- Reveal animations ---------- */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms cubic-bezier(.2,.7,.2,1); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ---------- Misc ---------- */
+  .scrollspy-marker { position: absolute; top: -120px; }
+
+  body.lb-open { overflow: hidden; }
+
+  /* Tweaks panel base styling tweaks */
+  .tweaks-panel-host { z-index: 999 !important; }
+  /* Back pill */
+  .back-pill {
+    position: fixed; left: 16px; bottom: 16px;
+    z-index: 80;
+    font-family: var(--font-mono);
+    font-size: 11px; letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 10px 14px; border-radius: 100px;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all 160ms ease;
+  }
+  .back-pill:hover { color: var(--accent); border-color: var(--accent); }
+  .back-pill svg { width: 12px; height: 12px; }
+
+  /* ---------- Now ticker ---------- */
+  .ticker {
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+    overflow: hidden;
+    position: relative;
+  }
+  .ticker-track {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    padding: 14px 0;
+    white-space: nowrap;
+    animation: tickerMove 38s linear infinite;
+    will-change: transform;
+  }
+  @keyframes tickerMove {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .ticker:hover .ticker-track { animation-play-state: paused; }
+  .ticker .item {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .ticker .item .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+  .ticker .item .lab {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+    text-transform: none;
+  }
+  .ticker .item.live .dot {
+    animation: pulse 1.8s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(168, 65, 44, 0.55); }
+    70% { box-shadow: 0 0 0 8px rgba(168, 65, 44, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(168, 65, 44, 0); }
+  }
+  .ticker .sep {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    border: 1px solid var(--rule);
+    flex-shrink: 0;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+  }
+
+  /* ---------- Contact form section ---------- */
+  .contact-section {
+    padding: var(--section-y) 0;
+    border-top: 1px solid var(--rule);
+  }
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  @media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } }
+
+  .contact-left .lede {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 6vw, 84px);
+    line-height: 0.96;
+    letter-spacing: -0.015em;
+    margin: 18px 0 32px 0;
+  }
+  .contact-left .lede em { font-style: italic; color: var(--accent); }
+  .contact-left .quick {
+    display: flex; flex-direction: column; gap: 14px;
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  .contact-left .quick .row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 16px;
+    align-items: baseline;
+  }
+  .contact-left .quick .k {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .contact-left .quick a {
+    font-family: var(--font-display);
+    font-size: clamp(18px, 1.5vw, 22px);
+    color: var(--ink);
+    border-bottom: 1px solid transparent;
+    transition: color 160ms ease, border-color 160ms ease;
+    width: fit-content;
+  }
+  .contact-left .quick a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .form {
+    display: flex; flex-direction: column; gap: 18px;
+  }
+  .field {
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .field label {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    font: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 0;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: clamp(18px, 1.4vw, 22px);
+    line-height: 1.4;
+    border-radius: 0;
+    transition: border-color 160ms ease;
+  }
+  .field input::placeholder,
+  .field textarea::placeholder { color: var(--mute); }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+  }
+  .field textarea { resize: vertical; min-height: 120px; }
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 600px) { .field-row { grid-template-columns: 1fr; } }
+
+  .submit-row {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .submit-row .note {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+  .submit-btn {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 14px 22px;
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 10px;
+    transition: background 160ms ease, color 160ms ease;
+  }
+  .submit-btn:hover { background: var(--accent); border-color: var(--accent); }
+  .submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .submit-btn svg { width: 12px; height: 12px; }
+
+  .form-success {
+    padding: clamp(24px, 3vw, 36px);
+    border: 1px solid var(--accent);
+    background: var(--accent-soft);
+    border-radius: 2px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .form-success h3 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2vw, 28px);
+    margin: 0;
+    color: var(--accent);
+  }
+  .form-success p { margin: 0; color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+
+
+<div id="root"></div>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="data.jsx"></script>
+<script type="text/babel" src="editorial-components.jsx"></script>
+<script type="text/babel" src="editorial-app.jsx"></script>
+
+</body>
 </html>
