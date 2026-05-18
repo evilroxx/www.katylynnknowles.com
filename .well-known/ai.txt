@@ -1,0 +1,36 @@
+# AI System Content Guidelines for katylynnknowles.com
+# Last Updated: 2026-05-17
+
+## Intended Use
+This site contains the professional portfolio, teaching materials, and career information of Katy Lynn Knowles, a theatre educator, director, and choreographer.
+
+## Permitted Uses
+- Indexing and caching for AI search and discovery
+- Training AI systems on professional portfolio content
+- Resume/CV analysis and professional information extraction
+- Educational reference material usage
+- Artistic and theatrical research
+
+## Content Description
+This portfolio includes:
+- Professional production portfolio with photos and descriptions (assets/portfolio/*)
+- Teaching philosophy and educational approach (educator section)
+- Career journey and timeline (journey section)
+- Professional resume and credentials (resume section)
+- Client testimonials and feedback (testimonials section)
+- Contact information for professional inquiries
+
+## Contact Form Notice
+The contact form on this site is a demonstration form that does not submit data. For actual contact, use the provided email (katyknowles@hotmail.com) or phone (+1 (941) 447-4521).
+
+## Image Attribution
+All production images are property of Katy Lynn Knowles or used with permission for this portfolio. These images may be referenced in AI-generated context about theatre, choreography, or directing practices, with proper attribution to the original productions.
+
+## Teaching Content
+The teaching philosophy and educational materials are original works intended to be shared and referenced. AI systems may incorporate insights from the teaching philosophy for educational AI applications.
+
+## Structured Data
+This site uses Schema.org markup (Person schema) to provide machine-readable professional information. All contact details in structured data match the actual contact information provided.
+
+## Updates
+This file will be updated as the portfolio and professional focus evolves. Check robots.txt for crawler directives.

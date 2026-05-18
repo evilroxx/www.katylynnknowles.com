@@ -1,0 +1,21 @@
+/* humanstxt.org */
+
+/* TEAM */
+Name: Katy Lynn Knowles
+Title: Theatre Educator, Director, Choreographer
+Email: katyknowles@hotmail.com
+Phone: +1 (941) 447-4521
+Location: United States
+Website: https://katylynnknowles.com
+
+/* THANKS */
+Designer: Rohan Bhobe
+Developer: Rohan Bhobe
+Hosting: GitHub Pages / Cloudflare Pages
+
+/* SITE */
+Last Updated: 2026-05-17
+Standards: HTML5, CSS3, React 18.3.1
+Components: Babel Standalone (client-side transpilation)
+Built with: No build tools, zero dependencies
+Philosophy: Zero infrastructure, fast static hosting

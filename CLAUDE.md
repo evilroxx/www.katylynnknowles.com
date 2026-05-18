@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**katyknowles.com** is a static React site with **no build step**. React 18.3.1 + Babel Standalone transpile JSX in the browser via unpkg CDN. All files are static—suitable for GitHub Pages and Cloudflare Pages.
+**katylynnknowles.com** is a static React site with **no build step**. React 18.3.1 + Babel Standalone transpile JSX in the browser via unpkg CDN. All files are static—suitable for GitHub Pages and Cloudflare Pages.
 
 ### Key Constraint
 This is **not** a typical React app (no npm, no webpack, no build command). React and Babel load from CDN. JSX transpiles client-side. This design is intentional: zero infrastructure, fast hosting on static platforms.
@@ -61,6 +61,14 @@ Each palette overrides:
 - `--accent` set from tweaks
 - `--accent-soft` computed as `rgba(r, g, b, 0.12)` from hex
 
+#### Browser Compatibility
+
+Modern CSS features require current browsers (Chrome 111+, Firefox 113+, Safari 16.4+):
+- `color-mix(in oklab, ...)` — used in nav backdrop and hero portrait gradient
+- `backdrop-filter` (with `-webkit-` prefix fallback) — used in nav, lightbox, and hero caption overlays
+
+Older browsers (IE, pre-2024 versions) are not supported by this design system.
+
 #### Layout Patterns
 
 **12-column grid for portfolio:**
@@ -73,7 +81,7 @@ Each palette overrides:
 - Collapse to 1 column at 800-900px
 
 **Responsive breakpoints:**
-- 840px: Nav links hide, hamburger menu shown
+- 840px: Nav links hide (only brand + "Get in touch" CTA button remain; no hamburger menu)
 - 900px: Grid columns collapse
 - 800px: Testimonials/Resume grids collapse
 - 700px: Journey timeline goes single-column
@@ -92,7 +100,8 @@ Each palette overrides:
 - `Reveal` component wraps content
 - Triggers fade-in animation when element enters viewport
 - Optional `delay` prop for staggered animations
-- Threshold: `{ threshold: 0.3 }`
+- Optional `as` prop for polymorphic rendering (renders as different HTML element; default: `"div"`)
+- IntersectionObserver config: `{ rootMargin: "-10% 0px -10% 0px", threshold: 0.05 }`
 
 #### localStorage Persistence
 
@@ -124,6 +133,23 @@ Each palette overrides:
 
 **Adding new content:** Edit arrays in data.jsx. No rebuild needed—Babel recompiles on page load.
 
+### Component Details
+
+**NowTicker (editorial-components.jsx):**
+- CSS-animated scrolling ticker strip between Hero and About sections
+- Duplicates items for seamless infinite loop
+- Pauses animation on hover (`animation-play-state: paused`)
+- Respects `prefers-reduced-motion: reduce` (stops animation for accessibility)
+- Animation: `38s linear infinite`
+
+**ContactForm (editorial-components.jsx):**
+- Mock contact form component (no backend integration)
+- Simulates 900ms submission delay with `new Promise(r => setTimeout(r, 900))`
+- Shows success state after fake submission
+- Contact info is hardcoded in component: email `katyknowles@hotmail.com`, phone `+1 (941) 447-4521`
+- To integrate with a real backend: Replace `onSubmit` handler with Formspree, Netlify Forms, or similar service
+- Note: Contact details are in the component, not in data.jsx
+
 ## Common Tasks
 
 ### Modify a Palette
@@ -153,7 +179,7 @@ Each palette overrides:
 
 1. Open editorial-app.jsx, find `TWEAK_DEFAULTS`
 2. Edit: `palette`, `type`, `hero`, `portrait`, `accent` (hex color)
-3. Comment `/*EDITMODE-BEGIN*/` and `/*EDITMODE-END*/` are preserved—they mark user-editable defaults
+3. The `TWEAK_DEFAULTS` object is wrapped in `/*EDITMODE-BEGIN*/` and `/*EDITMODE-END*/` comments—these markers preserve the block as the user-editable region (used by external tooling)
 
 ### Adjust Responsive Breakpoints
 
@@ -165,7 +191,7 @@ Each palette overrides:
 
 **No build step. Every change is live:**
 
-1. Start HTTP server: `cd /Volumes/[C]\ Windows\ 11/1a/Personal/katyknowles.com && python3 -m http.server 8000`
+1. Start HTTP server: `cd /Volumes/[C]\ Windows\ 11/1a/Personal/katylynnknowles.com && python3 -m http.server 8000`
 2. Open http://localhost:8000 in browser
 3. Edit any `.jsx` or `.html` file
 4. Refresh browser—Babel retranspiles JSX instantly
@@ -226,6 +252,42 @@ assets/
 **Accent color wrong?**
 - Verify hex in tweaks or TWEAK_DEFAULTS (must be valid 6-digit hex)
 - Check browser console for parse errors in accent override code (editorial-app.jsx lines 53-65)
+
+**Dead code and orphaned assets:**
+- `font-awesome-4.1.0/` directory is empty (legacy leftover, can be safely deleted)
+- `StarRule` component in editorial-components.jsx is defined but never used or exported
+- Orphaned assets not referenced in any code: `assets/artist_quote.png`, `assets/educator3.jpg`, `assets/educator4.jpg`, `assets/educator6.jpg`, `assets/preview-archive.png`, `assets/preview-playbill.png`, `assets/signature.png`
+
+## SEO & AI Crawler Optimization
+
+This site is fully optimized for search engines and AI systems:
+
+### Files
+- **robots.txt** — Allows all major search engines and AI crawlers (Claude, GPT, Perplexity, etc.); disallows bad actors
+- **sitemap.xml** — Guides crawlers to all major sections; updated with changefreq/priority
+- **humans.txt** — Attribution and team info (humanstxt.org standard)
+- **.well-known/ai.txt** — AI system guidelines; describes content classification and permitted uses
+
+### Meta Tags & Structured Data
+- Open Graph (og:*) — Fixed absolute URLs for social sharing (Twitter, LinkedIn, Facebook)
+- Twitter Card — Complete with title, description, image
+- JSON-LD — Person schema + BreadcrumbList for rich snippets
+- robots meta — Allows indexing, image preview, snippets, video preview
+- Canonical URL — Prevents duplicate content issues
+- Keywords & author — Relevant theatre/arts keywords
+
+### Performance Optimizations
+- Font preload — Critical fonts preloaded for faster rendering
+- Preconnect — Google Fonts preconnected
+- Image dimensions in OG tags — Prevents layout shift on social shares
+
+### AI Crawler Support
+The `robots.txt` explicitly allows:
+- **Claude/Anthropic** (claude-web, anthropic-ai, CCBot)
+- **OpenAI** (GPTBot, ChatGPT-User, OAI-SearchBot)
+- **Other LLMs** (Perplexity, Amazonbot, Petalbot)
+
+To restrict AI training, update `robots.txt` with disallow rules or add `X-Robots-Tag: noindex` header.
 
 ## CDN Dependencies
 
