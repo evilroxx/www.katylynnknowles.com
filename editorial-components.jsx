@@ -593,7 +593,7 @@ function Footer() {
 
         <div className="colophon">
           <div>© {new Date().getFullYear()} Katy Lynn Knowles · All rights reserved</div>
-          <div><a href="#cookie-settings" className="footer-consent" data-consent-open>Cookie settings</a></div>
+          <div><a href="/privacy/" className="footer-consent">Privacy</a> · <a href="#cookie-settings" className="footer-consent" data-consent-open>Cookie settings</a></div>
           <div>New York · Sarasota</div>
         </div>
       </div>

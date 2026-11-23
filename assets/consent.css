@@ -39,3 +39,4 @@
 .consent-btn:focus-visible { outline: 2px solid var(--accent, #a8412c); outline-offset: 2px; }
 .footer-consent { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .footer-consent:hover { color: var(--accent, #a8412c); }
+.consent-link { color: var(--accent, #a8412c); text-decoration: underline; text-underline-offset: 3px; }
