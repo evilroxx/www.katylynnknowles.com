@@ -4,7 +4,7 @@
   var CLARITY_ID = 'zhvmk45kdj';
   var PRIVACY_URL = '/privacy/';
   var TEXT = 'This site uses cookies to understand how it is used (Google Analytics and Microsoft Clarity). Accept?';
-  var KEY = 'ameya-consent';
+  var KEY = 'site-consent';
   var VERSION = 1;
 
   window.dataLayer = window.dataLayer || [];
